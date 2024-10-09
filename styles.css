@@ -1,0 +1,31 @@
+/* body {
+} */
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  font-size: 16px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: 1px solid gray;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input-section {
+  background: whitesmoke;
+  padding: 30px;
+}
+
+.hint {
+  opacity: 0.7;
+  color: gray;
+  margin-left: 30px;
+  margin-top: 8px;
+}
