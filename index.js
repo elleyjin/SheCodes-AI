@@ -2,7 +2,7 @@ function generateStory(event) {
   event.preventDefault();
 
   let resultElement = document.querySelector("#result");
-  resultElement.innerHTML = `<p><i class="fa-solid fa-book"></i> cooking your story</p>
+  resultElement.innerHTML = `<p class="blink_me"><i class="fa-solid fa-cookie-bite"></i> cooking your story</p>
   `;
   resultElement.classList.remove("hidden");
 
@@ -22,7 +22,7 @@ function generateStory(event) {
 }
 
 function handleImageResponse(response) {
-  console.log(response.data.photos[0].src.landscape);
+  //   console.log(response.data.photos[0].src.landscape);
   let imageElement = document.querySelector("#image");
 
   if (imageElement) {

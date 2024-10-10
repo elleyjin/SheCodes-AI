@@ -30,10 +30,17 @@ input[type="text"] {
 }
 
 footer {
+  max-width: 800px;
   color: #fff8dc;
   text-align: right;
-  margin: 15px 10px;
+  margin: 15px auto;
   opacity: 0.4;
+  padding-right: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .icon {
@@ -70,11 +77,6 @@ footer {
   color: whitesmoke;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .input-section {
   background: #e6e6fa;
   padding: 30px;
@@ -96,9 +98,24 @@ footer {
   border-left: 10px solid #ff6347;
 }
 
+.loading-icon {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
 .imageStyle img {
   max-width: 100%;
   margin: 10px auto;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  30% {
+    opacity: 0;
+  }
 }
 
 .hidden {
