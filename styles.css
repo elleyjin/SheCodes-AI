@@ -9,7 +9,9 @@ body {
 }
 
 h1 {
-  color: #87ceeb;
+  color: #ffe523;
+  padding: 25px 0;
+  display: inline-block;
 }
 
 form {
@@ -17,14 +19,55 @@ form {
 }
 
 input[type="text"] {
-  width: 80%;
+  width: 75%;
   font-size: 25px;
-  padding: 18px 20px;
+  padding: 16px 20px;
   border-radius: 50px;
   border: 1px solid gray;
   opacity: 0.7;
   color: #2a3d45;
   background: whitesmoke;
+}
+
+footer {
+  color: #fff8dc;
+  text-align: right;
+  margin: 15px 10px;
+  opacity: 0.4;
+}
+
+.icon {
+  font-size: 34px;
+  color: #ff6347;
+  opacity: 0.9;
+  padding: 0 20px 0 15px;
+}
+
+.side-icon {
+  font-size: 100px;
+  float: right;
+  margin: 20px;
+  color: #e1ad01;
+  transform: rotate(-20deg);
+}
+
+.star-icon {
+  float: right;
+  margin: 40px 0 50px 50px;
+  font-size: 30px;
+  color: #e1ad01;
+  opacity: 0.9;
+}
+
+.button {
+  padding: 19px 30px;
+  border: 1px solid gray;
+  border-radius: 60px;
+  font-size: 18px;
+  margin-left: 10px;
+  opacity: 0.7;
+  background: #778da9;
+  color: whitesmoke;
 }
 
 .container {
@@ -38,7 +81,7 @@ input[type="text"] {
 }
 
 .hint {
-  opacity: 0.7;
+  opacity: 0.8;
   color: gray;
   margin-left: 30px;
   margin-top: 8px;
@@ -47,7 +90,83 @@ input[type="text"] {
 .story {
   font-size: 25px;
   background: #d8bfd8;
-  padding: 25px;
+  padding: 30px 50px;
   margin-top: 30px;
   line-height: 1.5;
+  border-left: 10px solid #ff6347;
+}
+
+.imageStyle img {
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  h1 {
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    padding: 11px 16px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 0;
+    opacity: 0.7;
+  }
+
+  .hint {
+    margin: 8px 0 0 0;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .side-icon {
+    float: right;
+    font-size: 50px;
+  }
+
+  .star-icon {
+    float: right;
+    font-size: 15px;
+    margin: 30px -10px 40px 0;
+  }
+
+  .story {
+    font-size: 20px;
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .side-icon {
+    display: none;
+  }
+
+  .star-icon {
+    display: none;
+  }
+
+  .story {
+    font-size: 18px;
+    padding: 30px;
+  }
 }

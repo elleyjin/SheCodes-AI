@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script
+      src="https://kit.fontawesome.com/309aeb0c62.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,22 +22,35 @@
   </head>
   <body>
     <div class="container">
-      <h1>Bedtime Story Generator</h1>
+      <div class="header">
+        <i class="fa-solid fa-book-open-reader icon"></i>
+        <h1>Bedtime Story Generator</h1>
+        <i class="fa-solid fa-moon side-icon"></i>
+        <i class="fa-solid fa-star star-icon"></i>
+      </div>
       <div class="input-section">
         <form id="submit-btn">
           <input
             type="text"
-            placeholder="Enter a type of cuisine"
+            placeholder="what story do you want to search"
             autocomplete="off"
             required
             id="user-instruction"
           />
-          <input type="submit" value="submit" />
+          <input class="button" type="submit" value="search" />
         </form>
-        <p class="hint">ie: chinese, french</p>
+        <p class="hint">ie: pokemon, unicorn, princess</p>
       </div>
-      <div id="result" class="story"></div>
+      <div id="result" class="story hidden"></div>
+
+      <div id="image" class="imageStyle"></div>
     </div>
+    <footer>
+      <small
+        >This app is open sourced & coded with
+        <i class="fa-solid fa-heart"></i> by ElleyJin</small
+      >
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
