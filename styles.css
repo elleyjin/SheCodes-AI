@@ -38,6 +38,14 @@ footer {
   padding-right: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
